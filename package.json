@@ -1,0 +1,27 @@
+{
+  "name": "vue-nuxt-lambda-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "start-sls": "npm run build && sls offline start",
+    "deploy": "nuxt build && sls deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Taylor Thurman",
+  "dependencies": {
+    "nuxt": "^2.14.3",
+    "nuxt-start": "^2.14.4",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-http": "^2.5.0",
+    "serverless-offline": "^6.7.0"
+  },
+  "devDependencies": {
+    "serverless-domain-manager": "^4.2.0",
+    "vue-svg-loader": "^0.16.0"
+  }
+}
